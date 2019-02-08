@@ -15,6 +15,12 @@ ntpd, the Reference Implementation of the NTP protocol, by the Network Time Foun
 
     ./scripts/run
 
+# Thanks
+
+The blog article by J-C Berthon on 
+[deploying a time server in a container][https://www.berthon.eu/2017/a-time-server-in-a-container-part-1/] 
+was hugely helpful and served as the basis for this work.
+
 # Licensing
 
 docker-ntpd is licensed under the 
