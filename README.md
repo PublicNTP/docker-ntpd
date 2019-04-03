@@ -15,6 +15,10 @@ ntpd, the Reference Implementation of the NTP protocol, by the Network Time Foun
 
     ./scripts/run
 
+# Debug
+
+    ./scripts/debug
+
 # Thanks
 
 J-C Berthon's blog article on 

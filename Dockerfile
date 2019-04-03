@@ -20,7 +20,6 @@ COPY etc/ntp.conf /etc/
 EXPOSE 123/udp
 
 # Run NTPd
-#   -n = run in foreground
-#   -g = allow first adjustment to be big
-#   -u ntp:ntp = run as non-privileged user/group
+# 
+# Flags for foreground are handled inside the run script
 ENTRYPOINT [ "/usr/sbin/ntpd" ]
