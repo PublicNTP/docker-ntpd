@@ -13,6 +13,9 @@ RUN apt-get -y install -y --no-install-recommends ntp
 RUN apt-get clean -q
 RUN rm -Rf /var/lib/apt/lists/*
 
+# Copy config file in
+COPY etc/ntp.conf /etc/
+
 # Expose NTP server port
 EXPOSE 123/udp
 
