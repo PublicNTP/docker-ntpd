@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker run --rm -it --cap-add SYS_RESOURCE --cap-add SYS_TIME -p 123:123/udp publicntp/ntpd:latest -g -n
+# docker run --rm -it --cap-add SYS_RESOURCE --cap-add SYS_TIME -p ${NTP_IP}:123:123/udp publicntp/ntpd:latest -g -n
+docker run --rm -it --cap-add SYS_RESOURCE --cap-add SYS_TIME -p ${NTP_IP}:123:123/udp publicntp/ntpd:latest -g -n

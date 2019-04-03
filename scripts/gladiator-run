@@ -1,0 +1,10 @@
+#!/bin/bash
+
+IP_PREFIX="10.101.7."
+
+for i in $(seq 2 17);
+do
+	NTP_IP="${IP_PREFIX}${i}"
+	echo "Starting NTP docker image server on IP: ${NTP_IP}"
+	docker run -d --rm -it --cap-add SYS_RESOURCE --cap-add SYS_TIME -p ${NTP_IP}:123:123/udp publicntp/ntpd:gladiator -g -n
+done
